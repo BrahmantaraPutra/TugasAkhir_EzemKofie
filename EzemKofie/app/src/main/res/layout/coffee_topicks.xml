@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/top_image"
+            android:layout_width="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/american_classic"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rouned_search"
+            android:backgroundTint="@color/EzemGreen"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:layout_marginTop="120dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="50dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@android:drawable/btn_star_big_on"
+                app:tint="@color/EzemWhite" />
+
+            <TextView
+                android:id="@+id/top_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.1"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/EzemWhite"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/top_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Americano Classic"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15sp"
+            android:textColor="@color/EzemBlack"/>
+
+        <TextView
+            android:id="@+id/top_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Americano"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="15sp"
+            android:textColor="@color/EzemBlack"/>
+
+        <TextView
+            android:id="@+id/top_price"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 4.89"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="15sp"
+            android:textColor="@color/EzemBlack"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

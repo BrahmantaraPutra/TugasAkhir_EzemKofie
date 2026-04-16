@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/EzemWhite">
+
+    <View
+        android:id="@+id/header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/EzemGreen" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@color/EzemGreen"
+            android:src="@drawable/left"
+            app:tint="@color/EzemWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Details"
+            android:textColor="@color/EzemWhite"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/img_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/img_coffee"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/american_classic" />
+
+        <TextView
+            android:id="@+id/txt_rating"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@id/img_coffee"
+            android:layout_alignEnd="@id/img_coffee"
+            android:background="@drawable/rounded_bg"
+            android:backgroundTint="@color/EzemGray"
+            android:gravity="center"
+            android:text="4.6"
+            android:textColor="@color/EzemWhite"
+            android:fontFamily="@font/poppins_bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_container"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:textColor="@color/EzemBlack"
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Latte Indulgence"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Indulge in the creamy goodness of this latte..."
+            android:textColor="@color/EzemBlack" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:textColor="@color/EzemBlack"
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="$ 3.61"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+                <ImageButton android:id="@+id/btn_minus" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/minus" android:background="@android:color/transparent"/>
+                <TextView android:id="@+id/txt_qty" android:layout_width="30dp" android:layout_height="wrap_content" android:text="1" android:gravity="center" android:fontFamily="@font/poppins_bold" android:textColor="@color/EzemBlack"/>
+                <ImageButton android:id="@+id/btn_plus" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/plus" android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:textColor="@color/EzemWhite"
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/EzemGreen"
+            android:text="CONFIRM"
+            android:fontFamily="@font/poppins_bold"
+            app:cornerRadius="25dp" />
+    </LinearLayout>
+</RelativeLayout>
